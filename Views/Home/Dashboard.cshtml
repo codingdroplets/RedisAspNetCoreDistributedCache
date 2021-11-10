@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var dashboardData = (DashboardData)ViewBag.DashboardData;
+}
+
+Total Customers: @dashboardData.TotalCustomerCount
+<br />
+Total Revenue: @dashboardData.TotalRevenue
+<br />
+Top Selling Product: @dashboardData.TopSellingProductName
+<br />
+Top Selling Country: @dashboardData.TopSellingCountryName
